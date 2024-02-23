@@ -39,3 +39,17 @@ set(KernelSel4Arch "" CACHE STRING "aarch32, aarch64, arm_hyp, ia32, x86_64, ris
 set(LibSel4TestPrinterRegex ".*" CACHE STRING "A POSIX regex pattern used to filter tests")
 set(LibSel4TestPrinterHaltOnTestFailure OFF CACHE BOOL "Halt on the first test failure")
 mark_as_advanced(CLEAR LibSel4TestPrinterRegex LibSel4TestPrinterHaltOnTestFailure)
+
+# Good default values for getting channelbench running
+set(BenchUntypeSizebits 13 CACHE STRING "")
+set(LibSel4UtilsCSpaceSizeBits 8 CACHE STRING "")
+set(ManagerCovertBench ON CACHE STRING "")
+set(BenchCovert ON CACHE BOOL "")
+set(KernelSharedGadget ON CACHE BOOL "")
+set(KernelTimeSlice 1 CACHE STRING "")
+set(KernelTimerTickMS 10 CACHE STRING "")
+set(KernelNumDomains 2 CACHE STRING "")
+set(LibSel4CacheColourNumCacheColours 16 CACHE STRING "")
+set(NUM_DOMAINS 1 CACHE STRING "")
+set(LibSel4CacheColouring OFF CACHE BOOL "")
+set(KernelDomainMicroarchFlush ON CACHE BOOL "")
